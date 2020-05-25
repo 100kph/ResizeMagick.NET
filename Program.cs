@@ -42,6 +42,8 @@ namespace ResizeMagick.NET
                 {
                     int newWidth = 1984, newHeight = 1984;
 
+                    Console.WriteLine($"Magick.NET Version: {MagickNET.Version}");
+
                     using (MagickImage image = new MagickImage(imageStream))
                     {
                         image.Resize(newWidth, newHeight);
